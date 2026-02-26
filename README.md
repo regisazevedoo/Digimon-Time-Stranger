@@ -5,18 +5,18 @@ Este projeto nasceu do interesse em explorar a criação de um website temático
 <table border="0">
   <tr>
     <td>
-      <img src="./print/print1.png" alt="Tela Inicial" width="600">
+      <img src="./print/print1.png" alt="Tela Inicial" width="400">
     </td>
     <td>
-      <img src="./print/print2.png" alt="Lista de Digimons" width="600">
+      <img src="./print/print2.png" alt="Lista de Digimons" width="400">
     </td>
   </tr>
   <tr>
     <td>
-      <img src="./print/print3.png" alt="Detalhes do Card" width="600">
+      <img src="./print/print3.png" alt="Detalhes do Card" width="400">
     </td>
     <td>
-      <img src="./print/busca.gif" alt="Demonstração da Busca" width="600">
+      <img src="./print/busca.gif" alt="Demonstração da Busca" width="400">
     </td>
   </tr>
 </table>
@@ -37,7 +37,7 @@ Lógica e Interatividade: Uso de JavaScript para gerar links de perfis e caminho
 
 
 
-
+<br>
 ⚖️ Governança e Ética
 
 Autorização de Uso: Estabeleci contato direto com a equipe do site Grindosaur para validar a integração de links e ícones.
@@ -46,7 +46,7 @@ Acordo de Uso: O projeto foi aprovado para fins Educacionais e de Portfólio, re
 
 Créditos: Todas as imagens e links de perfis são creditados ao Grindosaur.com.
 
-
+<br>
 🏁 Como visualizar
 1. Clone o repositório.
 
