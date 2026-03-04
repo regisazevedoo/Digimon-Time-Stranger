@@ -53,3 +53,6 @@ Créditos: Todas as imagens e links de perfis são creditados ao Grindosaur.com.
 2. Abra o arquivo index.html no seu navegador.
 
 3. Teste a função searchName digitando o nome de um Digimon (ex: Renamon) para gerar o card dinâmico.
+
+<br>
+*Projeto para estudo. Não haverá sorteio de cópia do jogo.
