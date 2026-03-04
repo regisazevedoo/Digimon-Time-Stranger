@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   overflow-x: hidden;
 }
 
@@ -108,12 +108,12 @@ main {
 
 .mainbanner {
   max-width: 43%;
-  min-height: 15vh; /* altura mínima */
+  min-height: 15vh;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* centraliza verticalmente */
-  align-items: flex-start; /* mantém alinhado à esquerda */
-  margin: 0 auto; /* centraliza horizontalmente */
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(7px);
   background-position: center;
@@ -160,9 +160,10 @@ main {
   padding: 15px;
   border: 2px solid transparent;
   border-radius: 30px;
-  background: linear-gradient(white, white) padding-box,
+  background:
+    linear-gradient(white, white) padding-box,
     /* cor interna */
-      linear-gradient(
+    linear-gradient(
         45deg,
         rgb(2, 255, 255) 0%,
         /* branco no meio */ rgba(255, 25, 150, 1) 100%
@@ -193,63 +194,73 @@ main {
 .versoes h2 {
   font-size: 36px;
   text-align: center;
-  padding-top: 2%;
+  padding-top: 2rem;
 }
 
 .versoescontainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 90%;
   margin: 50px auto 0;
+  padding-bottom: 3rem;
 }
 
 .edicoes {
   flex: 1;
-  max-width: 450px;
-  margin: 0 20px;
-  padding-bottom: 3%;
-}
-
-.edicoes ul {
-  padding: 10% 0 5% 0;
-  background-color: rgb(9, 54, 97);
-  border-radius: 20px;
-}
-
-.edicoes li {
-  height: 40px;
-  line-height: 5px;
-  list-style: none;
-  color: rgb(247, 194, 74);
-  padding-left: 0%;
-  text-align: center;
+  max-width: 350px;
+  min-width: 280px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .edicoes p {
-  width: 450px;
-  height: 40px;
-  border-radius: 20px 20px 0 0;
+  width: 100%;
+  height: 50px;
   background-color: #c41377;
   color: aliceblue;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  border-radius: 20px 20px 0 0;
   position: relative;
-  top: +20px;
+  top: 0;
   font-weight: 700;
   text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+.edicoes ul {
+  background-color: rgb(9, 54, 97);
+  border-radius: 0 0 20px 20px;
+  margin-top: 0;
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+.edicoes li {
+  height: auto;
+  min-height: 45px;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  color: #f7c24a;
 }
 
 section .botao {
-  padding: 15px 20px;
+  width: 80%;
+  margin: 15px auto;
+  position: static;
   background-color: #c41377;
-  color: #fff;
-  border-radius: 10px;
-  width: 300px;
-  text-align: center;
-  align-items: center;
-  margin: 0 auto;
+  border-radius: 0.7rem;
 }
 
 section .botao:hover {
@@ -259,7 +270,8 @@ section .botao:hover {
 }
 
 .procurar {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(https://images.withthewill.net/timestranger01_march21_2025.jpg)
       center/cover no-repeat;
   text-align: center;
@@ -406,68 +418,77 @@ footer {
 }
 
 @media (max-width: 576px) {
-  .navbaritens {
-    width: 100%;
-    display: inline-block;
-    font-size: 2px;
-    text-align: right;
-  }
-
-  .navbaritens li {
-    font-size: 10px;
-    margin-left: 15px;
-  }
-
-  .comprarbotao {
-    padding: 10px 15px;
-    background-color: #c41377;
-    border-radius: 10px;
-  }
-
-  .mainbanner h1,
-  .mainbanner p {
-    width: 50%;
-    margin-top: 10px;
-  }
-
   main {
-    background-size: cover;
-    padding: 10rem 0;
+    top: -90;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10rem 2rem;
   }
 
   .mainbanner {
-    width: 35%;
-    height: 17rem;
-    padding-left: 2%;
-    min-height: auto; /* deixa a altura se ajustar ao conteúdo */
-    /* centraliza no meio da tela */
-    /* centraliza texto também */
+    margin-left: 0;
+    margin-right: auto;
+    align-items: flex-start;
+    text-align: left;
+    max-width: 450px;
+    width: 50%;
   }
 
   .mainbanner h1 {
-    font-size: 35px;
+    font-size: 24px;
+    width: 100%;
+    padding: 0;
   }
 
   .mainbanner p {
     font-size: 16px;
-    max-width: 500px;
+    width: 100%;
+    padding: 0;
+    margin-top: 10px;
   }
 
-  .versoes h2 {
-    width: 80%;
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .navbaritens li {
+    display: none;
+  }
+
+  .navbaritens li.botao, 
+  .navbaritens .botao { 
+    display: block !important;
+    margin: 0;
+  }
+
+  .edicoes {
+    margin-bottom: 40px;
+    width: 90%;
+  }
+
+  .procurar h2 {
+    padding: 1.5rem 0 1rem 0;
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .novidades li {
+    max-width: 90%;
+    margin: 15px auto;
+    flex: 1 1 auto;
+  }
+
+  .novidades img {
+    width: 60%;
+  }
+
+  footer {
+    max-width: 80%;
     margin: 0 auto;
-    margin-bottom: -50px;
-    padding: 2rem 0;
-  }
-
-  .faleconosco input,
-  .faleconosco textarea {
-    width: 75%;
-  }
-
-  .faleconosco h2,
-  .faleconosco p {
-    padding: 0 10% 0 10%;
+    padding-bottom: 3rem;
   }
 }
 
@@ -497,10 +518,9 @@ html {
   padding: 20px;
   opacity: 0;
   transform: scale(0.8);
-  transition: all 0.5s ease; /* controla suavidade da transição */
+  transition: all 0.5s ease;
 }
 
-/* Quando aparecer */
 #resultado.mostrar .card {
   opacity: 1;
   transform: scale(1);
@@ -523,5 +543,3 @@ html {
   background-color: #f6068e;
   transition: 0.2s;
 }
-
-
